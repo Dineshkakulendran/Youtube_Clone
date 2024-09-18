@@ -31,6 +31,9 @@ const getChannelIcon = (video_data) => {
     })
 }
 
+//make video card function, 
+//videoContainer.innerHTML += ...: This line directly modifies the HTML by adding a new video card element to the container.
+//This function is responsible for dynamically adding video elements to the videoContainer. Here’s the DOM manipulation in action
 const makeVideoCard = (data) => {
   videoContainer.innerHTML += `
   <div class="video" onclick="location.href = 'https://youtube.com/watch?v=${data.id}' ">
@@ -48,8 +51,7 @@ const makeVideoCard = (data) => {
   `
 }
 
-//search logic
-
+//search logic search input handling 
 const searchInut = document.querySelector(".search-bar");
 const searchBtn = document.querySelector(".search-btn");
 
